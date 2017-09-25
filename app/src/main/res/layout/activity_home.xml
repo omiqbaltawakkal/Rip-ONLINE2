@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.iqbal.rip_online.MainActivity">
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pemesanan Layanan Pemakaman"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.032" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama :"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="54dp"
+            android:layout_below="@+id/judul"/>
+
+        <EditText
+            android:id="@+id/namaPemesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="54dp"
+            android:layout_toRightOf="@+id/nama"/>
+        <TextView
+            android:id="@+id/nomorHP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No HP : "
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="54dp"
+            android:layout_below="@+id/namaPemesan"/>
+
+        <EditText
+            android:id="@+id/noHp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="54dp"
+            android:layout_below="@+id/nomorHP"
+            android:layout_toRightOf="@+id/nomorHP"/>
+        <TextView
+            android:id="@+id/namaAlm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Alm. :"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="130dp"
+            android:layout_below="@id/noHp"/>
+
+        <EditText
+            android:id="@+id/namaAlmarhum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="130dp"
+            android:layout_below="@id/namaAlm"
+            android:layout_toRightOf="@id/namaAlm"/>
+        <EditText
+            android:id="@+id/tanggalLahir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namaAlmarhum"
+            android:text="Tanggal Lahir"/>
+        <DatePicker
+            android:id="@+id/dateLahir"
+            android:calendarTextColor="black"
+            android:datePickerMode="spinner"
+            android:layout_height="500px"
+            android:layout_width="match_parent"
+            android:calendarViewShown="false"
+            android:layout_below="@+id/tanggalLahir"
+            />
+        <EditText
+            android:id="@+id/tanggalMeninggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateLahir"
+            android:text="Tanggal Meninggal"/>
+
+        <DatePicker
+            android:id="@+id/dateMeninggal"
+            android:calendarTextColor="black"
+            android:datePickerMode="spinner"
+            android:layout_height="500px"
+            android:layout_width="match_parent"
+            android:calendarViewShown="false"
+            android:layout_below="@+id/tanggalMeninggal"
+            />
+
+
+    </RelativeLayout>
